@@ -8,7 +8,11 @@ import { donorReqValidate } from "../../../../../components/Validation/vaildate"
 import { Notification } from "../../../../../components/ToastNotification";
 
 const Search = ({ addBloodDonorRequest, isLoading }) => {
-  const [data, setData] = useState({ eligibility: "eligible" });
+  const [data, setData] = useState({
+    eligibility: "eligible",
+    location: "dhaka",
+    bloodGroup: "A+",
+  });
   const [errors, setErrors] = useState({}); // error catch
   const handleChange = (e) => {
     setData({

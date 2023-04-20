@@ -1,0 +1,100 @@
+.life_care_project_donor_profile {
+  padding: 0 40px;
+  max-width: 1080px;
+  margin: auto;
+  min-height: 30vh;
+  @include breakpoints(tablet) {
+    padding: 0 50px;
+    min-height: 70vh;
+  }
+  @include breakpoints(mdlgMobile) {
+    padding: 0 10px;
+  }
+  padding: 50px 10px;
+  display: flex;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  .life_care_project_donor_profile_left {
+    padding: 10px 30px;
+    width: 300px;
+    background-color: rgb(116, 116, 185);
+    .profile_image {
+      margin: 20px 0px;
+      position: relative;
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .blood_group {
+        position: absolute;
+        right: 40px;
+        bottom: 17px;
+        text-transform: capitalize;
+        padding: 6px 7px;
+        font-size: 20px;
+        background-color: #cf3c3ca9;
+        color: #fff;
+        border-radius: 50%;
+      }
+    }
+    .profile_heading {
+      margin-top: 10px;
+      h3 {
+        font-size: 22px;
+        text-transform: capitalize;
+        color: #000;
+      }
+      p {
+        color: #000;
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+    }
+    .profile_title {
+      p {
+        color: #000;
+        font-size: 16px;
+        text-align: left;
+        .blood {
+          color: #9e0f0fd0;
+          font-size: 20px;
+        }
+        .Not_eligible {
+          color: #9e2121a9;
+        }
+        .eligible {
+          color: #5dbd6a;
+        }
+      }
+    }
+    .profile_details {
+      padding-top: 30px;
+      h4 {
+        font-size: 20px;
+        font-weight: 900;
+        color: #9e2121a9;
+        text-decoration: underline;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 800;
+        color: #000;
+        span {
+          font-size: 16px;
+          color: #000;
+        }
+      }
+    }
+  }
+  .life_care_project_donor_profile_right {
+    flex-grow: 3;
+    background-color: rgb(204, 97, 97);
+    padding: 10px 30px;
+    color: #000;
+    .profile_send_message {
+      width: 100%;
+    }
+  }
+}
